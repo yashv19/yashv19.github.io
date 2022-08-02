@@ -62,7 +62,9 @@ and (max-width: 720px) {
 		justify-items: center;
 	}
 	.intro-photo {
-		padding: 20px;
+		display: flex;
+		justify-content: center;
+		
 	}
 }
 
@@ -223,7 +225,7 @@ and (max-width: 720px) {
 
 		.wrapper > .inner {
 			padding: 5em 5em 5em 5em ;
-			max-width: 100%;
+			max-width: 100vw;
 			width: 75em;
 		}
 
@@ -247,7 +249,7 @@ and (max-width: 720px) {
 			}
 
 			@media screen 
-			and (max-width: 736px) {
+			and (max-width: 720px) {
 
 				.wrapper > .inner {
 					padding: 2em 2em 2em 2em ;
