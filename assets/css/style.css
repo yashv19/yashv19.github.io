@@ -30,6 +30,19 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Main Page */
+#portrait {
+	height: auto;
+	width: 18em;
+	border-radius: 50%;
+}
+.intro-grid-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 20px;
+	align-items: center;
+}
+
 /* Basic */
 
 	@media screen and (max-width: 480px) {
@@ -116,7 +129,7 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 1.5em;
 	}
 
 	h3 {
@@ -459,4 +472,3 @@ input, select, textarea {
 			}
 
 		}
-
