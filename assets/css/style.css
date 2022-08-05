@@ -59,6 +59,17 @@
 
 }
 
+.img-fluid1 {
+	height: auto;
+	width: 15em;
+	border-radius: 2%;
+	display: flex;
+	justify-content: center;
+}
+	.img-fluid1:hover {
+		filter:invert(54%) sepia(0%) saturate(0%) hue-rotate(29deg) brightness(90%) contrast(90%);
+	}
+
 /* --- Anything Smaller than 480px (phones) */
 
 @media only screen and (max-width: 480px) {
@@ -103,6 +114,13 @@
 	.intro-grid-container {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
+		gap: 2vw;
+		align-items: center;
+	}
+
+	.links-grid-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
 		gap: 2vw;
 		align-items: center;
 	}
