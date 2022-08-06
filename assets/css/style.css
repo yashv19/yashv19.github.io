@@ -17,6 +17,16 @@
 .navbar {
 	box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.075);
 }
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+	color: black;
+	background-color: #fcd900;
+}
+
+	.nav-pills > li.active > a:hover {
+		background-color: #efcb00;
+		color:black;
+	}
+
 /* Wrapper */
 
 .wrapper {
@@ -59,36 +69,19 @@
 
 }
 
-.img-fluid1 {
+.img-fluid {
 	height: auto;
 	width: 15em;
 	border-radius: 2%;
 	display: flex;
 	justify-content: center;
 }
-	.img-fluid1:hover {
+	.img-fluid:hover {
 		filter:invert(54%) sepia(0%) saturate(0%) hue-rotate(29deg) brightness(90%) contrast(90%);
 	}
 
-/* --- Anything Smaller than 480px (phones) */
 
-@media only screen and (max-width: 480px) {
-
-	/* Main Page */
-	.intro-grid-container {
-		display: grid;
-		grid-template-rows: 1fr 1fr;
-		gap: 2vh;
-		justify-items: center;
-	}
-
-	#sidebar {
-		display: none;
-	}
-}
-
-/* --- Anything between 480px and 768px (big phones / tablets) */
-/* --- Sidebar should be shown at the top here -- */
+/* --- Anything smaller than 768px (phones / tablets) */
 @media only screen and (max-width: 768px) {
 
 	/* Main Page */
@@ -96,12 +89,22 @@
 	.intro-grid-container {
 		display: grid;
 		grid-template-rows: 1fr 1fr;
-		gap: 2vw;
+		gap: 4vh;
 		justify-items: center;
 	}
 
-	#sidebar {
-		display: none;
+	/* Intro Page */
+	.links-grid-container {
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		gap: 4vh;
+		justify-items: center;
+	}
+
+	.links-grid-child {
+		height: auto;
+		padding-top: 4vh;
+		padding-bottom: 4vh;
 	}
 
 }
@@ -121,8 +124,14 @@
 	.links-grid-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		gap: 2vw;
+		gap: auto;
 		align-items: center;
+	}
+
+	.links-grid-child {
+		width: auto;
+		padding-left: 5vw;
+		padding-right: 5vw;
 	}
 
 }
