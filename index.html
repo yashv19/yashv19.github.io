@@ -16,21 +16,18 @@
 
 <body data-bs-spy="scroll" data-bs-target="mynav" tabindex="0">
 
-    <div id="sidebar">
-        <nav id="mynav" class="navbar px-5 py-1 justify-content-start navbar-light fixed-top">
-            <a class="navbar-brand" href="#">
-                <img src="assets/icons/android-chrome-192x192.png" width="40vw" height="auto"
-                    class="d-inline-block align-text-top">
-            </a>
-            <ul class="nav nav-pills mx-3">
+    <div id="navigationbar">
+        <nav id="mynav" class="navbar px-5 py-1 justify-content-center  fixed-top">
+
+            <ul class="nav mx-3">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#intro">About Me</a>
+                    <a class="nav-link active" style="color: white" href="#intro">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#links">Links</a>
+                    <a class="nav-link" style="color: white" href="#links">Links</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#resume">Resume</a>
+                    <a class="nav-link" style="color: white" href="#resume">Resume</a>
                 </li>
             </ul>
         </nav>
@@ -39,15 +36,13 @@
     <!-- Intro -->
     <div id="wrapper">
         <section id="intro" class="wrapper style1">
-            <div>
-                <div class="intro-grid-container">
-                    <div class="intro-photo">
-                        <img id="portrait" src="assets/images/square-portrait.jpeg" alt="Portrait Photo"></img>
-                    </div>
-                    <div class="intro-text">
-                        <h1>👋 Yash Vedanaparti</h1>
-                        <h3>Hello, I'm Yash, a Technical Specialist at Slack.</h3>
-                    </div>
+            <div class="intro-grid-container">
+                <div class="intro-photo">
+                    <img id="portrait" class="img-fluid" src="assets/images/square-portrait.jpeg" alt="Portrait Photo"></img>
+                </div>
+                <div class="intro-text">
+                    <h1>👋 Yash Vedanaparti</h1>
+                    <h3>Hello, I'm Yash, a Technical Specialist at Slack.</h3>
                 </div>
             </div>
         </section>
@@ -56,27 +51,27 @@
     <!-- Links -->
     <div id="wrapper">
 
-        <section id="links" class="wrapper style2">
+        <section id="links" class="wrapper style2 bg-image">
 
-                <h1>🔗 These are my links</h1>
-                <br>
-                <div class="links-grid-container">
-                    <div class="links-grid-child">
-                        <a href="https://github.com/yashv19">
-                            <img class="img-fluid mx-auto" src="assets/images/github.svg"></img>
-                        </a>
-                    </div>
-                    <div class="links-grid-child">
-                        <a href="https://www.linkedin.com/in/yashvinvedanaparti/">
-                            <img class="img-fluid mx-auto" src="assets/images/linkedin.svg"></img>
-                        </a>
-                    </div>
-                    <div class="links-grid-child">
-                        <a href="https://unsplash.com/@vinyash">
-                            <img class="img-fluid mx-auto" src="assets/images/portrait-image.svg"></img>
-                        </a>
-                    </div>
+            <h1>🔗 These are my links</h1>
+            <br>
+            <div class="links-grid-container">
+                <div class="links-grid-child">
+                    <a href="https://github.com/yashv19">
+                        <img class="img-fluid mx-auto" src="assets/images/github.svg"></img>
+                    </a>
                 </div>
+                <div class="links-grid-child">
+                    <a href="https://www.linkedin.com/in/yashvinvedanaparti/">
+                        <img class="img-fluid mx-auto" src="assets/images/linkedin.svg"></img>
+                    </a>
+                </div>
+                <div class="links-grid-child">
+                    <a href="https://unsplash.com/@vinyash">
+                        <img class="img-fluid mx-auto" src="assets/images/unsplash.svg"></img>
+                    </a>
+                </div>
+            </div>
 
         </section>
 
@@ -86,8 +81,8 @@
     <div id="wrapper">
 
         <section id="resume" class="wrapper style3">
-                <h1>📃 My Resume</h1>
-                <iframe src="assets/resume.pdf" width="100%" height="700px"></iframe>
+            <h1>📃 My Resume</h1>
+            <iframe src="assets/resume.pdf" width="100%" height="700px"></iframe>
         </section>
 
     </div>
