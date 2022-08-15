@@ -7,7 +7,7 @@
 }
 
 h4 {
-	font-size: 0.7em;
+	font-size: 4em;
 }
 
 /* Wrapper */
@@ -30,7 +30,7 @@ h4 {
 }
 	.wrapper.style1 {
 		/*background-image: linear-gradient(to bottom right, #ffabab, #aff8d8); */
-		background-image: url('../images/unsplash-mountains.jpeg'); 
+		background-image: url('../images/switzerland.jpeg'); 
 		background-color: rgb(255, 255, 255); 
 		height: auto;
 		background-size: cover;
@@ -41,31 +41,29 @@ h4 {
 
 /*Portrait Photo */
 #portrait {
-	width: 18em;
+	width: 20em;
 	height: auto;
 	border-radius: 50%;
-	vertical-align: middle;
 }
 
-.intro-grid-container {
+.page-content {
 	border-style: transparent;
 	border-radius: 2em;
-	background-color: rgba(153, 153, 153, 0.581);
+	background-color: rgba(123, 123, 123, 0.65);
 }
 
-.intro-photo, .intro-content-text, .links-grid-container {
+.content-left, .content-right-text, .links-container {
 	padding: 2em 2em 2em 2em;
 }
 
-.links-grid-child .img-fluid {
+.link-child .img-fluid {
 	height: auto;
 	width: 4em;
-	border-radius: 2%;
 	display: flex;
 	justify-content: center;
 	filter: invert(100%) sepia(0%) saturate(7001%) hue-rotate(357deg) brightness(116%) contrast(102%);
 }
-	.links-grid-child .img-fluid:hover {
+	.link-child .img-fluid:hover {
 		opacity: 0.7;
 	}
 
@@ -73,23 +71,33 @@ h4 {
 /* --- Anything smaller than 768px (phones / tablets) */
 @media only screen and (max-width: 867px) {
 
-	.intro-grid-container {
-		display: grid;
-		grid-template-rows: 1fr 1fr;
-		gap: 2vh;
-		justify-items: center;
+	.page-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: space-between;
+	}
+
+	.content-left {
+		display: flex;
+		justify-content: center;
 		align-items: center;
+	}
+
+	.content-right {
+		display: flex;
+		justify-items: left;
+		flex-direction: column;
 	}
 
 	/* Links grid */
-	.links-grid-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		gap: auto;
+	.links-container {
+		display: flex;
 		align-items: center;
+		justify-content: space-around;
 	}
 
-	.links-grid-child {
+	.link-child {
 		width: auto;
 		padding-left: 5vw;
 		padding-right: 5vw;
@@ -102,33 +110,33 @@ h4 {
 @media only screen and (min-width: 868px) {
 
 	/* Main Page */
-	.intro-grid-container {
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-		gap: 2vw;
-		align-items: center;
-	}
-	.intro-photo {
-		justify-content: center;
+	.page-content {
 		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.content-left {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		width: auto;
 	}
 
-	.intro-content {
-		display: grid;
-		grid-template-rows: 3fr 2fr;
-		gap: 4vh;
+	.content-right {
+		display: flex;
+		flex-direction: column;
+		width: 60%;
 		justify-items: left;
 	}
 
-	/*Links Page */
-	.links-grid-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		gap: auto;
+	/*Links */
+	.links-container {
+		display: flex;
 		align-items: center;
+		justify-content: center;
 	}
 
-	.links-grid-child {
+	.link-child {
 		width: auto;
 		padding-right: 8vw;
 	}
