@@ -2,19 +2,16 @@
 
 * {
 	font-size: 100%;
-	font-family: monospace, sans-serif;
+	font-family: 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
 	vertical-align: baseline;
 }
 
-h4 {
-	font-size: 4em;
-}
 
 /* Wrapper */
 
 .wrapper {
 
-	color:rgb(255, 255, 255);
+	color:rgb(66, 66, 66);
 
 	padding: 4vw 4vw 4vw 4vw;
 	max-width: 100vw;
@@ -27,11 +24,13 @@ h4 {
 
 	margin-left: auto;
 	margin-right: 0;
+
 }
 	.wrapper.style1 {
 		/*background-image: linear-gradient(to bottom right, #ffabab, #aff8d8); */
-		background-image: url('../images/switzerland.jpeg'); 
+		background-image: url('../images/switzerland-translucent.png');
 		background-color: rgb(255, 255, 255); 
+		
 		height: auto;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -49,7 +48,9 @@ h4 {
 .page-content {
 	border-style: transparent;
 	border-radius: 2em;
-	background-color: rgba(123, 123, 123, 0.65);
+	background-color: rgba(255, 255, 255);
+	box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.05);
+
 }
 
 .content-left, .content-right-text, .links-container {
@@ -61,14 +62,14 @@ h4 {
 	width: 4em;
 	display: flex;
 	justify-content: center;
-	filter: invert(100%) sepia(0%) saturate(7001%) hue-rotate(357deg) brightness(116%) contrast(102%);
+	filter: invert(21%) sepia(0%) saturate(4859%) hue-rotate(77deg) brightness(92%) contrast(79%);
 }
 	.link-child .img-fluid:hover {
 		opacity: 0.7;
 	}
 
 
-/* --- Anything smaller than 768px (phones / tablets) */
+/* --- Anything smaller than 867px (phones / tablets) */
 @media only screen and (max-width: 867px) {
 
 	.page-content {
