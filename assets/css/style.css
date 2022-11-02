@@ -77,6 +77,8 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: space-between;
+		padding-left: 1%;
+		padding-right: 1%;
 	}
 
 	.content-left {
@@ -117,6 +119,8 @@
 		justify-content: space-around;
 		margin-left: 5%;
 		margin-right: 5%;
+		padding-left: 2%;
+		padding-right: 2%;
 	}
 	.content-left {
 		justify-content: center;
