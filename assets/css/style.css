@@ -2,11 +2,13 @@
 
 * {
 	font-size: 100%;
-	font-family: 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+	font-family: 'Trebuchet MS', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
 	vertical-align: baseline;
 }
 
-
+.h2 {
+	font-weight: 100;
+}
 /* Wrapper */
 
 .wrapper {
@@ -28,8 +30,10 @@
 }
 	.wrapper.style1 {
 		/*background-image: linear-gradient(to bottom right, #ffabab, #aff8d8); */
-		background-image: url('../images/switzerland-translucent.png');
-		background-color: rgb(255, 255, 255); 
+		/* background-image: url('../images/switzerland-translucent.png'); */
+		/* background-color: rgb(255, 255, 255);  */
+
+		background-image: linear-gradient(to bottom right, #3145f5, #8993f0);
 		
 		height: auto;
 		background-size: cover;
@@ -49,7 +53,7 @@
 	border-style: transparent;
 	border-radius: 2em;
 	background-color: rgba(255, 255, 255);
-	box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 3em 1em rgba(0, 0, 0, 0.2);
 
 }
 
