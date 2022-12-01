@@ -13,7 +13,7 @@
 
 .wrapper {
 
-	color:rgb(230, 230, 230);
+	color:rgb(255, 255, 255);
 	max-width: 100vw;
 	width: 100%;
 	display: flex;
@@ -31,14 +31,11 @@
 		background-image: linear-gradient(to bottom right, #ffabab, #aff8d8); 
 		background-image: url('../images/switzerland-translucent.png');
 		background-color: rgb(255, 255, 255); 
-
-		
 		height: auto;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 	} */
-
 
 
 .content-left, .content-right-text, .links-container {
@@ -49,20 +46,52 @@
 .portrait {
 	width: 20rem;
 	height: auto;
+	border-radius: 3rem;
+}
+
+.link-child {
+	background-color: rgb(230, 230, 230);
 	border-radius: 50%;
+	padding: 0.8rem;
 }
 
 .link-child .img-fluid {
 	height: auto;
-	width: 3rem;
+	min-width: 2rem;
 	display: flex;
-	justify-content: center;
-	filter: invert(99%) sepia(2%) saturate(1952%) hue-rotate(167deg) brightness(115%) contrast(80%);
+	justify-content: left;
+	filter: invert(21%) sepia(0%) saturate(4370%) hue-rotate(102deg) brightness(101%) contrast(89%);
 }
-	.link-child .img-fluid:hover {
-		opacity: 0.7;
+	.github, .linkedin, .unsplash {
+		background-color: rgb(255, 255, 255);
 	}
-
+	.github .img-fluid {
+		filter: invert(41%) sepia(9%) saturate(10%) hue-rotate(17deg) brightness(95%) contrast(87%);
+	}
+	.linkedin .img-fluid {
+		filter: invert(41%) sepia(9%) saturate(10%) hue-rotate(17deg) brightness(95%) contrast(87%);
+	}
+	.unsplash .img-fluid {
+		filter: invert(41%) sepia(9%) saturate(10%) hue-rotate(17deg) brightness(95%) contrast(87%);
+	}
+		.github:hover {
+			background-color: #171515;
+		}
+		.github:hover .img-fluid {
+			filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(251deg) brightness(106%) contrast(101%);
+		}
+		.linkedin:hover {
+			background-color: #0072b1;
+		}
+		.linkedin:hover .img-fluid {
+			filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(251deg) brightness(106%) contrast(101%);
+		}
+		.unsplash:hover {
+			background-color: black;
+		}
+		.unsplash:hover .img-fluid {
+			filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(251deg) brightness(106%) contrast(101%);
+		}
 
 /* --- Anything smaller than 867px (phones / tablets) */
 @media only screen and (max-width: 804px) {
@@ -110,8 +139,8 @@
 
 	.link-child {
 		width: auto;
-		padding-left: 5vw;
-		padding-right: 5vw;
+		margin-left: 2rem;
+		margin-right: 2rem;
 	}
 
 }
@@ -126,7 +155,7 @@
 		align-items: center;
 		justify-content: space-around;
 		border-style: transparent;
-		border-radius: 2rem;
+		border-radius: 3rem;
 		width: 60rem;
 		height: auto;
 		margin: 8rem 4rem 8rem 4rem;
@@ -168,7 +197,7 @@
 
 	.link-child {
 		width: auto;
-		padding-right: 15%;
+		margin-right: 3rem;
 	}
 
 }
