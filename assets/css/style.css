@@ -60,7 +60,7 @@
 	justify-content: left;
 	filter: invert(21%) sepia(0%) saturate(4370%) hue-rotate(102deg) brightness(101%) contrast(89%);
 }
-	.github, .linkedin, .unsplash {
+	.github, .linkedin, .unsplash, .chess {
 		background-color: rgb(255, 255, 255);
 	}
 	.github .img-fluid {
@@ -70,6 +70,9 @@
 		filter: invert(41%) sepia(9%) saturate(10%) hue-rotate(17deg) brightness(95%) contrast(87%);
 	}
 	.unsplash .img-fluid {
+		filter: invert(41%) sepia(9%) saturate(10%) hue-rotate(17deg) brightness(95%) contrast(87%);
+	}
+	.chess .img-fluid {
 		filter: invert(41%) sepia(9%) saturate(10%) hue-rotate(17deg) brightness(95%) contrast(87%);
 	}
 		.github:hover {
@@ -88,6 +91,12 @@
 			background-color: rgb(228, 97, 97);
 		}
 		.unsplash:hover .img-fluid {
+			filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(251deg) brightness(106%) contrast(101%);
+		}
+		.chess:hover {
+			background-color: #689f38;
+		}
+		.chess:hover .img-fluid {
 			filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(251deg) brightness(106%) contrast(101%);
 		}
 
@@ -129,8 +138,8 @@
 
 	.link-child {
 		width: auto;
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-left: 2%;
+		margin-right: 2%;
 	}
 
 }
@@ -179,7 +188,7 @@
 
 	.link-child {
 		width: auto;
-		margin-right: 3rem;
+		margin-right: 1.5rem;
 	}
 
 }
